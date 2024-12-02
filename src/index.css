@@ -1,0 +1,95 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#header {
+    flex-direction: column;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    text-align: left;
+}
+
+#header h1 {
+    color: blue;
+}
+
+#editor {
+    gap: 10px;
+    display: flex;
+}
+
+#editor input {
+    border: 1px solid lightgray;
+    padding: 20px;
+    width: auto;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+#editor button {
+    border: none;
+    padding: 20px 60px;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+}
+
+#editor button:hover {
+    background-color: darkblue;
+    transition: all 0.2s ease-out;
+    color: white;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+}
+#list input {
+    border: 1px solid lightgray;
+    padding: 20px;
+    width: auto;
+    border-radius: 5px;
+}
+
+#todo-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin: 10px 0;
+}
+
+#todo-item #todo-left,
+#todo-item #todo-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#todo-item #todo-right button {
+    border: none;
+    background-color: lightgray;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#todo-item #todo-right button:hover {
+    background-color: gray;
+    transition: all 0.2s ease-out;
+    color: white;
+}
+
+#todo-item #todo-left h4 {
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
